@@ -68,7 +68,7 @@ HealthCare-4You/
 │   ├── chatbot.png
 │   └── stethoscope.png
 │
-├── app.py
+├── appp.py
 ├── users.db
 ├── README.md
 └── .env
@@ -142,4 +142,4 @@ LinkedIn: www.linkedin.com/in/yashika-jandaniya-b58911282
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+If you found this project useful, consider giving it a star!
