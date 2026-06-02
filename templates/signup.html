@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left"></div>
+      <div class="left"><h1>Healthcare4U</h1></div>
+      <div class="right"></div>
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/chatbot.html">Chatbot</a></li>
+        <li><a href="/bmi.html">BMI Calculator</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div id="home">
+        <h1>Welcome to the Healthcare Bot!</h1>
+        <p>Your personal assistant for health-related queries and support.
+        Use the navigation above to explore our chatbot and BMI calculator features.</p>
+                <h2>About Us</h2>
+        <p>Our Healthcare Bot is designed to provide users with quick and reliable health information,
+            answer common medical questions, and assist with basic health assessments.
+            We aim to empower individuals to take control of their health and make informed decisions.</p>
+    </div>
+
+  <div class="container signup-card" onsubmit="signupUser(event)">
+    <h1><center>Create Account</center></h1>
+    <p>Welcome! Please create an account.</p>
+    <form id="signup-form">
+      <label for="username">USERNAME:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">PASSWORD:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm_password">CONFIRM PASSWORD:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+      
+      <button type="submit">Create Account</button>
+      <div id="msg" style="color: red; margin-top: 10px; text-align: center;"></div> 
+      <p class="center-text">Already have an account? <a href="/login">Login</a>.</p>
+    </form>
+    <script src="static/signup.js"></script>
+  </div>
+</body>
+</html>

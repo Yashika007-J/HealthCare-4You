@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <div class="left"></div>
+        <div class="center"><h1>Healthcare Bot</h1></div>
+        <div class="right"></div>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/chatbot.html">Chatbot</a></li>
+            <li><a href="/bmi.html">BMI Calculator</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+     </nav>
+     <div id="chatbot">
+
+    <!-- Header -->
+    <div class="chat-header">
+        🩺 CareBot - Healthcare Assistant
+    </div>
+
+    <!-- Messages Area -->
+    <div id="messages">
+        <div class="bot-bubble">
+            Hi! I am CareBot. Ask me about your health 🩺
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="chat-input-area">
+        <input
+            type="text"
+            id="message"
+            placeholder="Type your message..."
+            autocomplete="off"
+        />
+        <button id="send">Send</button>
+    </div>   
+
+    <script src="static/chatbot.js" defer></script>
+</body>
+</html>

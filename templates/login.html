@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+  <header>
+        <nav>
+      <div class="left"></div>
+      <div class="left"><h1>Healthcare4U</h1></div>
+      <div class="right"></div>
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/chatbot.html">Chatbot</a></li>
+        <li><a href="/bmi.html">BMI Calculator</a></li>
+      </ul>
+    </nav>
+    <header>
+        <div id="home">
+        <h1>Welcome to the Healthcare Bot!</h1>
+        <p>Your personal assistant for health-related queries and support.
+        Use the navigation above to explore our chatbot and BMI calculator features.</p>
+                <h2>About Us</h2>
+        <p>Our Healthcare Bot is designed to provide users with quick and reliable health information,
+            answer common medical questions, and assist with basic health assessments.
+            We aim to empower individuals to take control of their health and make informed decisions.</p>
+    </div>
+  <div class="container login-card">
+    <h1>Welcome back!</h1>
+    <p>Login to your Healthcare Chatbot account.</p>
+      <form onsubmit="loginUser(event); return false;" action="/login.html" method="post">
+
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="password">PASSWORD:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Login</button> 
+      <center><p class="center-text">Don't have an account? <a href="/signup">Sign Up</a>.</p></center>
+    </form>
+    <script src="./static/login.js"></script>
+  </div>
+</body>
+</html>
+
+

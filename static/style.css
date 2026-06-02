@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ede3e6;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  color: #222;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  float: right;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.login-card {
+  position: relative;
+  background-color: #ffffff;
+  width: min(100%, 420px);
+  margin: 50px 40px 50px 40px;
+  padding: 24px;
+  text-align: left;
+}
+
+.signup-card {
+  width: 420px;
+  margin: 50px 40px 50px 40px;
+  padding: 24px;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-card form,
+.login-card form,
+.container form {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signup-card input,
+.container input,
+.login-card input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.container h1,
+.container h2,
+.login-card h1,
+.signup-card h1 {
+  margin-top: 0;
+}
+
+.container p,
+.login-card p,
+.signup-card p {
+  line-height: 1.6;
+}
+
+.container label,
+.login-card label,
+.signup-card label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.container button,
+.login-card button,
+.signup-card button,
+#send {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  box-shadow: 0 4px 8px rgba(65, 22, 43, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container button:hover,
+.login-card button:hover,
+.signup-card button:hover,
+#send:hover {
+  background-color: #ff1493;
+}
+
+#home{
+  background-color: rgba(249, 249, 249, 0.95);
+  backdrop-filter: blur(10px);
+  float:left;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 50px 40px 50px 40px;
+  width: 700px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+#chatbot,
+#bmi {
+  background-color: rgba(249, 249, 249, 0.95);
+  backdrop-filter: blur(10px);
+  float:center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px 40px 40px 40px;
+  width: min(100%, 540px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+#bmi {
+  max-width: 500px;
+  text-align: left;
+}
+
+#login-form {
+  width: min(100%, 420px);
+  margin: 40px auto;
+  text-align: left;
+}
+
+#chatbot {
+  padding: 30px;
+  overflow: hidden;
+}
+
+.chat-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.chat-input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  gap: 8px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e3e3e3;
+}
+
+.user-bubble {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 0;
+  max-width: 70%;
+  align-self: flex-end;
+}
+
+.bot-bubble {
+  background-color: #e9ecef;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 0;
+  max-width: 70%;
+  align-self: flex-start;
+}
+
+#chatbot input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.center-text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.chat-input-area {
+  flex-direction: column;
+}
+
+#chatbot input {
+  width: 100%;
+}
