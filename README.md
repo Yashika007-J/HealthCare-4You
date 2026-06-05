@@ -129,6 +129,7 @@ http://127.0.0.1:5000
 - Health Tracking Dashboard
 - Voice-Based Interaction
 - Multi-Language Support
+- SQLite to MySQL
 
 ---
 ### Challenges Faced
