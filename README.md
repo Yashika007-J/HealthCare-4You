@@ -137,7 +137,7 @@ One of the key challenges during development was integrating the Gemini GenAI AP
 
 ### Learning Experience
 
-While developing this project, I faced challenges integrating the Gemini GenAI API. This experience helped me improve my understanding of API integration, prompt engineering, and handling AI-generated responses within a web application.
+While developing this project, I faced challenges integrating the Gemini GenAI API. This experience helped me improve my understanding of API integration, prompt engineering, and handling AI-generated responses within a web application and I am still working on it.
 
 ## Author
 
