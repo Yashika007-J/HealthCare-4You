@@ -131,6 +131,13 @@ http://127.0.0.1:5000
 - Multi-Language Support
 
 ---
+### Challenges Faced
+
+One of the key challenges during development was integrating the Gemini GenAI API. Understanding API authentication, configuring requests, handling responses, and implementing effective prompts required additional learning and experimentation. Overcoming these challenges helped strengthen my understanding of AI API integration and backend development.
+
+### Learning Experience
+
+While developing this project, I faced challenges integrating the Gemini GenAI API. This experience helped me improve my understanding of API integration, prompt engineering, and handling AI-generated responses within a web application.
 
 ## Author
 
